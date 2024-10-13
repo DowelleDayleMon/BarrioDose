@@ -1,0 +1,646 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Tangerine&display=swap');
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    padding:0;
+    margin:0;
+    border:0;
+}
+html{
+    scroll-behavior: smooth;
+    animation:appear 1200ms 1 ease;
+    -webkit-animation:appear 1200ms 1 ease;
+}
+@keyframes appear{
+    0%{
+        clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+
+        
+    }
+    100%{
+        clip-path: polygon(0 0, 99% 0, 100% 100%, 0 100%);
+
+        
+    }
+}
+.cart-sym{
+    display: none;
+}
+
+.home{
+    background-image: url(../pictures/main-pic.jpg);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+
+
+    min-width:100%;
+    min-height:100vh;
+}
+nav{
+    display: flex;
+    justify-content: flex-start;
+    max-height: 100vh;
+
+}
+nav .logo-title{
+    flex:0 0 50%;
+
+}
+nav a{
+    flex-shrink: 1;
+    font-size: 1.2em;
+    color:white;
+    padding:1rem;
+    margin: 1.1rem;
+    border-radius: 5px;
+    transition: 300ms;
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    -ms-transition: 300ms;
+    -o-transition: 300ms;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    white-space:nowrap;
+}
+nav a:hover{
+    background-color: brown;
+
+}
+nav a:last-child{
+    background-color: brown;
+}
+nav a:last-child:hover{
+    background-color: rgb(104, 27, 27);
+}
+nav .logo-title{
+    display: flex;
+    color:brown;
+}
+nav .logo-title h1{
+    font-family:cursive;
+    font-size: 2em;
+    padding:1.3rem;
+}
+nav img{
+    vertical-align: middle;
+}
+.greeting{
+    opacity:0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height:87vh;
+    width:50%;
+    margin: auto;
+    animation: greetings 1000ms 1 ease;
+    -webkit-animation: greetings 2000ms 1 ease-out forwards;
+}
+@keyframes greetings{
+    from{
+        transform: translateY(-100px);
+        -webkit-transform: translateY(-100px);
+        -moz-transform: translateY(-100px);
+        -ms-transform: translateY(-100px);
+        -o-transform: translateY(-100px);
+    }
+    to{
+        transform: translateY(0);
+        opacity:1;
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+}
+
+}
+.greeting h1{
+    color:#fff;
+    font-size: 5em;
+    font-family: 'Dancing Script';
+
+}
+.greeting p{
+    color:#fff;
+
+}
+.greeting h1:not(span h1){
+    text-shadow: 5px 2px brown;
+}
+.greeting div{
+    height:3px;
+    width:45vw;
+    background-color: #fff;
+}
+.greeting img{
+    height:30vh;
+    filter:
+    drop-shadow(2px 2px brown);
+    -webkit-filter: drop-shadow(2px 2px brown);
+}
+
+span h1{
+    color:black;
+}
+span{
+    margin-bottom: 10px;
+}
+.greeting span{
+    
+    padding:0 30px;
+    background-color: brown;
+}
+.greeting img:nth-child(1){
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}
+
+.greeting span h1{
+    color:black;
+}
+
+.about{
+    padding:1rem;
+    background-color: #fff;
+    min-height:50vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    flex-direction: column;
+
+}
+
+.about-title img{
+    height:10vh;
+    width:60vw;
+}
+.about h1{
+    font-family: 'Dancing Script';
+}
+.sample-pics-about{
+    padding: 1rem;
+    display: flex;
+    gap:1rem;
+}
+.sample-pics-about img{
+    width:200px;
+    height:200px;
+    box-shadow: 0 10px 10px gray;
+
+}
+.about-description{
+    display: flex;
+    justify-content: center;
+    gap:2rem;   
+    width:85%;
+}
+.about-description b{
+    font-size: 2em;
+    font-family: 'Dancing Script';
+}
+.about img{
+    max-width: 100vw;
+    width:20vw;
+}
+
+
+
+.menu{
+    background-image: url(../pictures/menu-sample-pic.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+.menu-description{
+    width:100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: brown;
+    font-size: 1.3em;
+    color:#fff;
+    min-height:18vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+.menu-description img{
+    width:30vw;
+}
+.menu-container{
+    display: flex;
+    flex-direction: row;
+    max-height:100vh;
+
+
+}
+.menu-container>*{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    font-family: 'Dancing Script';
+    color:white;
+}
+.menu-container h1 a{
+    font-family: 'Dancing Script';
+    font-size: 3em;
+    color:white;
+    text-shadow: 2px 2px brown;
+
+} 
+.menu-container h1{
+    transition: 300ms;
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    -ms-transition: 300ms;
+    -o-transition: 300ms;
+} 
+.menu-container h1:hover{
+    scale:1.1;
+} 
+.Sinigang{
+    background-image: url(../pictures/sample-dish1.jpg);
+    background-attachment: fixed;
+    background-size: contain;
+    width:33.33vw;
+    height:33.33vh;
+
+}
+
+.Sisig{
+    background-image: url(../pictures/sample-dish2.jpg);
+    background-attachment: fixed;
+    background-size: contain;
+    width:33.33vw;
+    height:33.33vh;
+
+}
+.Adobo{
+    background-image: url(../pictures/sample-dish3.jpg);
+    background-attachment: fixed;
+    background-size:cover;
+    background-position: center;
+    width:33.33vw;
+    height:33.33vh;
+}
+.Mechado{
+    background-image: url(../pictures/mechado.jpg);
+    background-attachment: fixed;
+    background-size:cover;
+    background-position: center;
+    width:33.33vw;
+    height:33.33vh;
+}
+.Kare-kare{
+    background-image: url(../pictures/kare-kare.jpg);
+    background-attachment: fixed;
+    background-size:cover;
+    background-position: center;
+    width:33.33vw;
+    height:33.33vh;
+}
+.Bulalo{
+    background-image: url(../pictures/bulalo.webp);
+    background-attachment: fixed;
+    background-size:cover;
+    background-position: center;
+    width:33.33vw;
+    height:33.33vh;
+}
+.Menudo{
+    background-image: url(../pictures/menudo.jpg);
+    background-attachment: fixed;
+    background-size:cover;
+    background-position: center;
+    width:33.33vw;
+    height:33.33vh;
+}
+.Mungo{
+    background-image: url(../pictures/mungo.jpg);
+    background-attachment: fixed;
+    background-size:cover;
+    background-position: center;
+    width:33.33vw;
+    height:33.33vh;
+}
+.Nilaga{
+    background-image: url(../pictures/nilaga.jpg);
+    background-attachment: fixed;
+    background-size:cover;
+    background-position: center;
+    width:33.33vw;
+    height:33.33vh;
+}
+
+
+
+
+.transparent-div{
+    width:100%;
+    min-height:70vh;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+
+
+}
+.transparent-div img{
+    width:50vw;
+    filter:
+    drop-shadow(2px 2px brown);
+    -webkit-filter: drop-shadow(2px 2px brown);
+}
+.menuText{
+    font-size: 8em;
+    font-family: 'Dancing Script';
+    text-shadow: 2px 2px brown;
+    color:#fff;
+    
+}
+
+footer{
+    min-height:10vh;
+    color:#fff;
+    background-color: #000;
+
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    
+
+}
+.footer-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 50%;
+
+}
+
+footer h1{
+    font-family: 'Dancing Script';
+    font-size: 3em;
+}
+.footerText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.footerText span{
+    padding: 0 1rem;
+    font-style: italic;
+    background-color: brown;
+
+}
+.socials{
+    margin-top: 1rem;
+}
+.socials img{
+    scale:.7;
+    transition: 300ms;
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    -ms-transition: 300ms;
+    -o-transition: 300ms;
+}
+.socials img:hover{
+    transform: translateY(-20px);
+    -webkit-transform: translateY(-20px);
+    -moz-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    -o-transform: translateY(-20px);
+}
+.email{
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+
+}
+input[type="email"]{
+    width:20vw;
+    height:5vh;
+    margin-bottom: .5rem;
+    font-size: 1.2em;
+}
+textarea{
+    resize: none;
+    font-size: 1.2em;
+}
+button{
+    width:20%;
+    height:3vh;
+    margin:.5rem .5rem .5rem 0;
+    background-color: brown;
+    color:white;
+    transition: 300ms;
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    -ms-transition: 300ms;
+    -o-transition: 300ms;
+}
+button:hover{
+    background-color: rgb(107, 28, 28);
+}
+
+.location{
+    display: flex;
+    flex-basis: 60%;
+}
+.price{
+    background-color: brown;
+}
+
+
+
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    visibility: hidden;
+    background: transparent;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: brown;
+    border:solid 5px white;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(149, 19, 19);
+  }
+@media(min-width:768px)and (max-width:1280px){
+    .greeting img{
+        width:80vw;
+    }
+    nav{
+
+        background-color: brown;
+        justify-content: center;
+    }
+
+    nav .logo-title{
+        display: none;
+    }
+    footer{
+        flex-direction: column;
+    }
+    footer textarea, footer input[type="email"]{
+        width:60vw;
+    }
+}
+@media only screen and (max-width: 428px){
+    nav{
+        display: none;
+        position: fixed;
+        background-color: rgb(136, 60, 60);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        min-height: 100vh;
+        width:100vw;
+        transform: translateX(-1000px);
+        z-index: 2;
+        -webkit-transform: translateX(-1000px);
+        -moz-transform: translateX(-1000px);
+        -ms-transform: translateX(-1000px);
+        -o-transform: translateX(-1000px);
+    }
+    .greeting{
+        min-height: 100vh;
+    }
+    .greeting img{
+        height:30vh;
+        width:90vw;
+    
+    }
+    .greeting h1{
+        font-size: 3.5em;
+    
+    }
+    .greeting div{
+        height:3px;
+        width:60vw;
+        background-color: #fff;
+    }
+    .greeting span h1{
+        white-space: nowrap;
+        font-size: 3.5em;
+    }
+    .sample-pics-about{
+        display: block;
+    }
+    .sample-pics-about img{
+        box-shadow: none;
+    }
+    .sample-pics-about img:nth-child(odd){
+        display: none;
+    }
+    .about{
+        display: block;
+    }
+    .about h1{
+        text-align: center;
+    }
+    .about img{
+        width:100%;
+    }
+    .about-description{
+        display: block;
+        margin:0 auto;
+    }
+    .transparent-div{
+        min-height:35vh;
+    }
+    .transparent-div img{
+        width:80vw;
+    }
+    .menuText{
+        font-size: 2em;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .footerText{
+        margin-top: 1rem;
+    }
+
+    .email{
+
+        margin:1rem;
+    }
+    .email input{
+        width:80vw;
+    }
+    footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        height: 100vh;
+    }
+
+    .footerText span{
+        margin:0;
+
+    }
+    .footer-left{
+        display: flex;
+        margin-top: 1.5rem;
+        flex-basis: auto;
+    }
+    iframe{
+        display: none;
+    }
+    .location{
+        scale:.6;
+    }
+    .menu-description img{
+        width:90vw;
+    }
+    .menu-container{
+        display:flex;
+        flex-direction: column;
+    }
+    .menu-container *{
+        width:100vw;
+    }
+    .cart-sym{
+        cursor: pointer;
+        display: block;
+        position: fixed;
+        bottom: 0;
+        right:0;
+        padding: 1rem;
+        background-color: brown;
+    }
+}
