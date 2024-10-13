@@ -1,148 +1,185 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@100&family=Tangerine&display=swap');
-*{
-    padding:0;
-    margin:0;
+@import url(https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@100&family=Tangerine&display=swap);
+
+table td,
+table th {
+    font-family: Poppins;
+}
+
+table input[type=number],
+table td {
+    background-color: #742f2f;
+    text-align: center;
+}
+
+table,
+table td {
+    text-align: center;
+}
+
+table th,
+td button.math:hover {
+    background-color: brown;
+    color: #fff;
+}
+
+.message,
+.total {
+    font-size: 1.25em;
+}
+
+* {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
     text-decoration: none;
 }
-body{
-    background-color: black;
-}
-.back{
-    padding:.5rem;
-}
-.back a{
-    font-size: 2.5em;
-    color:brown;
-}
-table,tr,th,td{
-    border:1px solid;
-}
-table{
-    
-    width:80%;
-    margin:0 auto;
-    text-align: center;
-    border-collapse: collapse;
 
+body {
+    background-color: #000;
 }
-table th{
-    background-color: brown;
-    padding:1rem 2rem;
-    font-family: 'Poppins';
-    color:white;
+
+.back {
+    padding: .5rem;
 }
-table td{
-    text-align: center;
-    padding:1rem;
-    color:white;
-    font-family: 'Poppins';
-    background-color: rgb(116, 47, 47);
+
+.back a {
+    font-size: 2.5em;
+    color: brown;
 }
+
+table,
+td,
+th,
+tr {
+    border: 1px solid;
+}
+
+table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+table th {
+    padding: 1rem 2rem;
+}
+
+table td {
+    padding: 1rem;
+    color: #fff;
+}
+
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }
-table input[type="number"]{
-    width:25px;
-    color:white;
-    background-color:rgb(116, 47, 47) ;
+
+table input[type=number] {
+    width: 25px;
+    color: #fff;
     border: none;
-    text-align: center;
-    
 }
-td.dish{
+
+td button.math,
+td button.remove {
+    color: red;
+    padding: .3rem .5rem;
+    transition: 350ms;
+}
+
+td.dish {
     text-align: justify;
 }
-td button.remove{
+
+td button.remove {
     font-family: Arial, Helvetica, sans-serif;
     cursor: pointer;
     border-radius: 10px;
-    border:none;
-    color:red;
+    border: none;
     vertical-align: middle;
     float: right;
-    padding:.3rem .5rem;
-    background-color:white;
+    background-color: #fff;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
-    transition: all 350ms;
-    -webkit-transition: all 350ms;
-    -moz-transition: all 350ms;
-    -ms-transition: all 350ms;
-    -o-transition: all 350ms;
+    -webkit-transition: 350ms;
+    -moz-transition: 350ms;
+    -ms-transition: 350ms;
+    -o-transition: 350ms;
 }
-td button.remove:hover{
-    scale:1.1;
+
+td button.remove:hover {
+    scale: 1.1;
 }
-td button.math{
-    border:none;
+
+td button.math {
+    border: none;
     border-radius: 50%;
-    color:red;
-    padding:.3rem .5rem;
-    transition: all 350ms;
-    -webkit-transition: all 350ms;
-    -moz-transition: all 350ms;
-    -ms-transition: all 350ms;
-    -o-transition: all 350ms;
+    -webkit-transition: 350ms;
+    -moz-transition: 350ms;
+    -ms-transition: 350ms;
+    -o-transition: 350ms;
 }
-td button.math:hover{
-    background-color: brown;
-    color:white;
-    scale:1.1;
+
+td button.math:hover {
+    scale: 1.1;
 }
-td img{
-    width:70px;
+
+td img {
+    width: 70px;
     vertical-align: middle;
 }
-.total{
-    font-size: 1.25em;
+
+.total {
     text-align: left;
 }
-td hr{
-    width:100%;
 
+td hr {
+    width: 100%;
 }
-.checkout{
-    padding:.25rem .5rem;
-    color:brown;
+
+.checkout {
+    padding: .25rem .5rem;
+    color: brown;
     border: none;
-    transition: all 350ms;
-    -webkit-transition: all 350ms;
-    -moz-transition: all 350ms;
-    -ms-transition: all 350ms;
-    -o-transition: all 350ms;
+    transition: 350ms;
+    -webkit-transition: 350ms;
+    -moz-transition: 350ms;
+    -ms-transition: 350ms;
+    -o-transition: 350ms;
 }
-.checkout:hover{
-    background-color: rgb(90, 0, 0);
-    color:white;
-    scale:1.1;
-    transform:translateX(20px) ;
-    -webkit-transform:translateX(20px) ;
-    -moz-transform:translateX(20px) ;
-    -ms-transform:translateX(20px) ;
-    -o-transform:translateX(20px) ;
+
+.checkout:hover {
+    background-color: #5a0000;
+    color: #fff;
+    scale: 1.1;
+    transform: translateX(20px);
+    -webkit-transform: translateX(20px);
+    -moz-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    -o-transform: translateX(20px);
 }
-.message{
-    font-size: 1.25em;
+
+.message {
     margin-top: 1rem;
     padding-bottom: 1.5rem;
     text-align: center;
-    color:white;
+    color: #fff;
     text-shadow: 2px 2px brown;
     font-style: italic;
 }
-@media(max-width:428px){
-    table{
-        width:100%;
+
+@media(max-width: 428px) {
+    table {
+        width: 100%;
     }
-    td img{
-       display: none;
-       white-space: nowrap;
+
+    td img {
+        display: none;
+        white-space: nowrap;
     }
-    .message{
+
+    .message {
         font-size: 1em;
     }
 }
-
